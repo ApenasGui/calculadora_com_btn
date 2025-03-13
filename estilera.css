@@ -1,0 +1,53 @@
+header {
+    font-size: 30px;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(243, 130, 130);
+}
+.calculadora {
+    background-color: rgb(59, 46, 231);
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+/* agora vou pegar so o id da tela, pois so vou mexer
+nela, por isso utilizei # ao inves do . (ponto) */
+#tela {
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgba(250, 235, 215, 0.795);
+    border: none;
+}
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(2, 17, 150);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: rgba(253, 5, 17, 0.979);
+}
+.operador {
+    background-color: rgb(0, 94, 12);
+}
+.operador:hover {
+    background-color: blueviolet;
+}
